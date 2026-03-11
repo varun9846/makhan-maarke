@@ -120,61 +120,83 @@
     </header>
 
     <!-- HERO -->
-    <section id="home" class="relative">
-        <div class="relative overflow-hidden">
-            <!-- Background image -->
-            <div class="h-[520px] md:h-[560px] w-full bg-cover bg-center" style="
-            background-image:
-              linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.25)),
-              url('./images/home-cover.webp');
-          "></div>
+    <section id="home" class="relative overflow-hidden">
+        <div class="relative h-[560px] md:h-[620px] lg:h-[680px] w-full overflow-hidden bg-black">
 
-            <div class="absolute inset-0">
-                <div class="mx-auto flex h-full max-w-6xl items-center px-4">
-                    <div class="max-w-2xl">
-                        <!-- <span
-                            class="inline-flex rounded-full bg-brandGold-500/30 px-4 py-1 text-xs font-semibold tracking-wide text-brandGold-100">
-                            WELCOME TO
-                        </span> -->
+            <!-- Slide 1 -->
+            <div class="hero-slide absolute inset-0 brightness-110 contrast-105 saturate-110 transition-opacity duration-1000 bg-cover bg-no-repeat bg-[position:center_68%] md:bg-[position:center_62%] lg:bg-[position:center_58%]"
+                style="background-image: url('./newimages/chole-bhature-banner.png');">
+            </div>
 
-                        <h1 class="mt-4 font-display text-4xl md:text-6xl font-bold leading-tight text-brandGold-300">
-                            Makhan Maar Ke <span class="block text-brandGold-100 md:text-3xl italic">Authentic Punjabi Flavours
-                                Loaded with Butter</span>
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 opacity-0 brightness-110 contrast-105 saturate-110 transition-opacity duration-1000 bg-cover bg-no-repeat bg-[position:center_center] md:bg-[position:center_42%] lg:bg-[position:center_38%]"
+                style="background-image: url('./newimages/dal-makhani-banner.png');">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 opacity-0 brightness-110 contrast-105 saturate-110 transition-opacity duration-1000 bg-cover bg-no-repeat bg-[position:center_35%] md:bg-[position:center_32%] lg:bg-[position:center_28%]"
+                style="background-image: url('./newimages/home-cover.webp');">
+            </div>
+
+            <!-- Improved overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent"></div>
+
+            <!-- Content -->
+            <div class="absolute inset-0 z-10">
+                <div class="mx-auto flex h-full max-w-6xl items-center px-5 md:px-6">
+                    <div class="max-w-[640px] pt-8 md:pt-0">
+
+                        <h1
+                            class="font-display text-4xl font-bold leading-none text-brandGold-300 md:text-6xl lg:text-7xl">
+                            Makhan Maar Ke
                         </h1>
 
-                        <p class="mt-3 max-w-2xl text-sm md:text-base text-white/85">
+                        <p
+                            class="mt-2 text-2xl italic font-semibold leading-snug text-brandGold-100 md:text-3xl lg:text-4xl">
+                            Authentic Punjabi Flavours Loaded with Butter
+                        </p>
+
+                        <p class="mt-5 max-w-xl text-sm leading-7 text-white/85 md:text-lg">
                             Experience Amritsari kulchas, rich curries and buttery Punjabi dishes made with traditional
                             recipes.
                         </p>
 
-                        <div class="mt-6 flex flex-wrap gap-3">
+                        <div class="mt-8 flex flex-wrap gap-3">
+
                             <a href="#menu"
-                                class="inline-flex items-center justify-center rounded-md bg-brandGold-300 px-5 py-3 text-sm font-semibold text-slate-900 shadow-soft hover:bg-brandGold-400 transition">
+                                class="inline-flex items-center justify-center rounded-lg bg-brandGold-300 px-6 py-3 text-sm font-semibold text-slate-900 shadow-lg transition hover:bg-brandGold-400">
                                 Check Full Menu
                                 <span class="ml-2">›</span>
                             </a>
+
                             <a href="#contact"
-                                class="inline-flex items-center justify-center rounded-md bg-brandRed-700 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:bg-brandRed-800 transition">
+                                class="inline-flex items-center justify-center rounded-lg bg-brandRed-700 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-brandRed-800">
                                 Book a Table
                             </a>
+
                             <a href="#catering"
-                                class="inline-flex items-center justify-center rounded-md bg-white/20 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/30 hover:bg-white/25 transition">
+                                class="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/15">
                                 Order Online
                             </a>
+
                         </div>
                     </div>
                 </div>
 
-                <!-- Slider dots (UI only) -->
-                <div class="absolute bottom-8 right-10 hidden md:flex items-center gap-2">
-                    <div class="dot active bg-brandGold-300"></div>
-                    <div class="dot bg-white"></div>
-                    <div class="dot bg-white"></div>
+                <!-- Slider Dots -->
+                <div class="absolute bottom-8 right-6 hidden md:flex items-center gap-2 lg:right-10" id="heroDots">
+                    <button
+                        class="h-[3px] w-8 rounded-full bg-brandGold-300 opacity-100 transition-all duration-300"></button>
+                    <button
+                        class="h-[3px] w-8 rounded-full bg-white/70 opacity-60 transition-all duration-300"></button>
+                    <button
+                        class="h-[3px] w-8 rounded-full bg-white/70 opacity-60 transition-all duration-300"></button>
                 </div>
+
             </div>
         </div>
 
-        <!-- Bottom accent line like screenshot -->
+        <!-- Bottom Accent -->
         <div class="h-[2px] w-full bg-gradient-to-r from-transparent via-brandGold-300 to-transparent"></div>
     </section>
 
@@ -183,46 +205,60 @@
         <div class="mx-auto max-w-6xl px-4">
             <div class="mx-auto max-w-3xl text-center">
                 <p class="text-xs font-bold tracking-[0.25em] text-brandRed-700">WHY PEOPLE TRUST US</p>
-                <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-brandRed-700">Cooked with Honesty, Served with Love</h2>
+                <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-brandRed-700">Cooked with Honesty,
+                    Served with Love</h2>
                 <p class="mt-3 text-sm leading-6 text-slate-500">
-                    At Makhan Maar Ke, we believe great food starts with honest ingredients. Every plate is built around authentic Punjabi flavour, clean cooking choices and everyday freshness.
+                    At Makhan Maar Ke, we believe great food starts with honest ingredients. Every plate is built around
+                    authentic Punjabi flavour, clean cooking choices and everyday freshness.
                 </p>
             </div>
 
             <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
                 <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm">
-                    <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">🫒</div>
+                    <div
+                        class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">
+                        🫒</div>
                     <h3 class="mt-4 text-center font-display text-lg font-bold">No Palm Oil</h3>
                     <p class="mt-2 text-center text-xs leading-5 text-slate-500">
-                        We cook our dishes using quality oils and ingredients without palm oil so the flavour stays rich and the food feels honest.
+                        We cook our dishes using quality oils and ingredients without palm oil so the flavour stays rich
+                        and the food feels honest.
                     </p>
                 </div>
                 <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm">
-                    <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">🌶️</div>
+                    <div
+                        class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">
+                        🌶️</div>
                     <h3 class="mt-4 text-center font-display text-lg font-bold">No Artificial Food Colors</h3>
                     <p class="mt-2 text-center text-xs leading-5 text-slate-500">
-                        Our food gets its vibrant colour naturally from fresh spices, tomatoes, herbs and traditional cooking techniques.
+                        Our food gets its vibrant colour naturally from fresh spices, tomatoes, herbs and traditional
+                        cooking techniques.
                     </p>
                 </div>
                 <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm">
-                    <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">🧈</div>
+                    <div
+                        class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">
+                        🧈</div>
                     <h3 class="mt-4 text-center font-display text-lg font-bold">No Fat Spread</h3>
                     <p class="mt-2 text-center text-xs leading-5 text-slate-500">
-                        We use real butter and authentic ingredients instead of artificial fat spreads, because buttery Punjabi food deserves the real thing.
+                        We use real butter and authentic ingredients instead of artificial fat spreads, because buttery
+                        Punjabi food deserves the real thing.
                     </p>
                 </div>
                 <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm">
-                    <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">🥘</div>
+                    <div
+                        class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-brandGold-50 text-brandRed-700 text-xl">
+                        🥘</div>
                     <h3 class="mt-4 text-center font-display text-lg font-bold">Freshly Prepared Every Day</h3>
                     <p class="mt-2 text-center text-xs leading-5 text-slate-500">
-                        Every dish is prepared fresh in our kitchen every day using traditional recipes, fresh veggies and carefully selected spices.
+                        Every dish is prepared fresh in our kitchen every day using traditional recipes, fresh veggies
+                        and carefully selected spices.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- STORY -->
+    <!-- STORY -->
     <section id="story" class="bg-white py-16">
         <div class="mx-auto max-w-6xl px-4">
             <div class="grid items-center gap-10 md:grid-cols-2">
@@ -230,28 +266,35 @@
                     <p class="text-xs font-bold tracking-widest text-brandRed-700">DISCOVER OUR STORY</p>
 
                     <h2 class="mt-3 font-display text-4xl font-bold leading-tight">
-                        Serving Happiness Since <span class="text-brandGold-500 underline decoration-brandGold-200">2018</span>
+                        Serving Happiness Since <span
+                            class="text-brandGold-500 underline decoration-brandGold-200">2018</span>
                     </h2>
 
                     <p class="mt-4 text-sm leading-6 text-slate-600">
-                        Makhan Maar Ke was started with a simple mission – bringing the authentic taste of Punjab to Mumbai. From Amritsari kulchas to buttery dal makhani, every dish is prepared using traditional spices, fresh ingredients and the warmth of Punjabi hospitality.
+                        Makhan Maar Ke was started with a simple mission – bringing the authentic taste of Punjab to
+                        Mumbai. From Amritsari kulchas to buttery dal makhani, every dish is prepared using traditional
+                        spices, fresh ingredients and the warmth of Punjabi hospitality.
                     </p>
 
                     <p class="mt-4 text-sm leading-6 text-slate-600">
-                        What began as a love for bold Punjabi comfort food has grown into a favourite destination for guests who crave real butter, satisfying portions and a memorable dining experience.
+                        What began as a love for bold Punjabi comfort food has grown into a favourite destination for
+                        guests who crave real butter, satisfying portions and a memorable dining experience.
                     </p>
 
                     <ul class="mt-6 space-y-3 text-sm text-slate-700">
                         <li class="flex items-start gap-3">
-                            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brandGold-100 text-brandGold-500">✓</span>
+                            <span
+                                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brandGold-100 text-brandGold-500">✓</span>
                             Traditional Punjabi spices and fresh ingredients in every dish
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brandGold-100 text-brandGold-500">✓</span>
+                            <span
+                                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brandGold-100 text-brandGold-500">✓</span>
                             Kulchas, curries and classics crafted with real butter and honesty
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brandGold-100 text-brandGold-500">✓</span>
+                            <span
+                                class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brandGold-100 text-brandGold-500">✓</span>
                             A Mumbai address built around the comforting spirit of Punjab
                         </li>
                     </ul>
@@ -264,15 +307,18 @@
 
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="overflow-hidden rounded-3xl bg-white p-3 shadow-soft">
-                        <img class="h-[220px] w-full rounded-2xl object-cover" src="./images/home.webp" alt="Chef cooking Punjabi food" />
+                        <img class="h-[220px] w-full rounded-2xl object-cover" src="./images/home.webp"
+                            alt="Chef cooking Punjabi food" />
                         <p class="mt-3 text-sm font-semibold text-slate-800">Chef Cooking</p>
                     </div>
                     <div class="overflow-hidden rounded-3xl bg-white p-3 shadow-soft sm:translate-y-8">
-                        <img class="h-[220px] w-full rounded-2xl object-cover" src="./newimages/tandoori-soya-chap.webp.jpg" alt="Tandoor cooking" />
+                        <img class="h-[220px] w-full rounded-2xl object-cover"
+                            src="./newimages/tandoori-soya-chap.webp.jpg" alt="Tandoor cooking" />
                         <p class="mt-3 text-sm font-semibold text-slate-800">Tandoor Cooking</p>
                     </div>
                     <div class="overflow-hidden rounded-3xl bg-white p-3 shadow-soft sm:col-span-2">
-                        <img class="h-[240px] w-full rounded-2xl object-cover" src="./newimages/Kulcha-Malai-Roll.jpg" alt="Butter melting on kulcha" />
+                        <img class="h-[240px] w-full rounded-2xl object-cover" src="./newimages/Kulcha-Malai-Roll.jpg"
+                            alt="Butter melting on kulcha" />
                         <p class="mt-3 text-sm font-semibold text-slate-800">Butter Melting on Kulcha</p>
                     </div>
                 </div>
@@ -285,48 +331,63 @@
         <div class="mx-auto max-w-6xl px-4">
             <div class="text-center">
                 <p class="text-xs font-bold tracking-[0.25em] text-brandRed-700">SIGNATURE DISHES</p>
-                <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-brandRed-700">Makhan Maar Ke Specials</h2>
+                <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-brandRed-700">Makhan Maar Ke Specials
+                </h2>
                 <p class="mt-2 text-sm text-slate-500">A quick look at the dishes guests ask for again and again.</p>
             </div>
 
             <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
                 <article class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
-                    <img src="./newimages/veg-kulchizza.webp.png" alt="Amritsari Kulcha" class="h-56 w-full object-cover" />
+                    <img src="./newimages/veg-kulchizza.webp.png" alt="Amritsari Kulcha"
+                        class="h-56 w-full object-cover" />
                     <div class="p-5">
-                        <span class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Best Seller</span>
+                        <span
+                            class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Best
+                            Seller</span>
                         <h3 class="mt-3 font-display text-xl font-bold">Amritsari Kulcha</h3>
-                        <p class="mt-2 text-sm leading-6 text-slate-600">Crisp outside, soft inside and loaded with the rich buttery flavour that defines the brand.</p>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">Crisp outside, soft inside and loaded with the
+                            rich buttery flavour that defines the brand.</p>
                     </div>
                 </article>
                 <article class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
                     <img src="./newimages/dal-makhani.webp.jpg" alt="Dal Makhani" class="h-56 w-full object-cover" />
                     <div class="p-5">
-                        <span class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Signature Dish</span>
+                        <span
+                            class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Signature
+                            Dish</span>
                         <h3 class="mt-3 font-display text-xl font-bold">Dal Makhani</h3>
-                        <p class="mt-2 text-sm leading-6 text-slate-600">Slow-cooked black lentils finished with butter and cream for a deep, comforting Punjabi classic.</p>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">Slow-cooked black lentils finished with butter
+                            and cream for a deep, comforting Punjabi classic.</p>
                     </div>
                 </article>
                 <article class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
                     <img src="./newimages/chole-chawal.webp.jpg" alt="Chole Bhature" class="h-56 w-full object-cover" />
                     <div class="p-5">
-                        <span class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Chef Special</span>
+                        <span
+                            class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Chef
+                            Special</span>
                         <h3 class="mt-3 font-display text-xl font-bold">Chole Bhature</h3>
-                        <p class="mt-2 text-sm leading-6 text-slate-600">A hearty Punjabi feast with bold chickpea masala and indulgent flavours made for serious cravings.</p>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">A hearty Punjabi feast with bold chickpea
+                            masala and indulgent flavours made for serious cravings.</p>
                     </div>
                 </article>
                 <article class="overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-100">
-                    <img src="./newimages/jalandhari-paneer-tikka.webp.jpg" alt="Chole Kulcha" class="h-56 w-full object-cover" />
+                    <img src="./newimages/jalandhari-paneer-tikka.webp.jpg" alt="Chole Kulcha"
+                        class="h-56 w-full object-cover" />
                     <div class="p-5">
-                        <span class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Popular Dish</span>
+                        <span
+                            class="inline-flex rounded-full bg-brandGold-100 px-3 py-1 text-[11px] font-semibold text-brandRed-700">Popular
+                            Dish</span>
                         <h3 class="mt-3 font-display text-xl font-bold">Chole Kulcha</h3>
-                        <p class="mt-2 text-sm leading-6 text-slate-600">The perfect pairing of flavour-packed kulcha and Punjabi chole for a filling, familiar favourite.</p>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">The perfect pairing of flavour-packed kulcha
+                            and Punjabi chole for a filling, familiar favourite.</p>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-<!-- STATS + RECOMMENDED -->
+    <!-- STATS + RECOMMENDED -->
     <section id="catering" class="bg-white py-12">
         <div class="mx-auto max-w-6xl px-4">
             <div class="grid gap-6 md:grid-cols-3">
@@ -350,15 +411,23 @@
                         <p class="text-xs font-bold tracking-[0.25em] text-brandGold-200">CATERING / PARTY ORDERS</p>
                         <h3 class="mt-3 font-display text-3xl font-bold">Order Your Punjabi Feast</h3>
                         <p class="mt-3 max-w-2xl text-sm leading-6 text-white/80">
-                            Planning a house party, office lunch or family gathering? Make it a buttery Punjabi spread with Makhan Maar Ke. You can place your order on your favourite delivery platform and keep the feast easy.
+                            Planning a house party, office lunch or family gathering? Make it a buttery Punjabi spread
+                            with Makhan Maar Ke. You can place your order on your favourite delivery platform and keep
+                            the feast easy.
                         </p>
                     </div>
                     <div class="rounded-2xl bg-white/10 p-5 ring-1 ring-white/15">
                         <p class="text-sm font-semibold text-brandGold-200">Available On</p>
                         <div class="mt-4 flex flex-wrap gap-3">
-                            <a href="#" class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900">Order on Zomato</a>
-                            <a href="#" class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900">Order on Swiggy</a>
-                            <a href="#" class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900">Magic pin</a>
+                            <a href="#"
+                                class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900">Order on
+                                Zomato</a>
+                            <a href="#"
+                                class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900">Order on
+                                Swiggy</a>
+                            <a href="#"
+                                class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900">Magic
+                                pin</a>
                         </div>
                     </div>
                 </div>
@@ -366,7 +435,7 @@
         </div>
     </section>
 
-<!-- MENU -->
+    <!-- MENU -->
     <section id="menu" class="bg-white py-16">
         <div class="mx-auto max-w-6xl px-4">
             <div class="text-center">
@@ -378,506 +447,139 @@
                     All our dishes are prepared without palm oil, artificial food colors or fat spreads.
                 </p>
             </div>
+            <!-- MENU SECTION -->
+            <section id="menu" class="relative bg-gradient-to-b from-yellow-50 via-amber-50 to-yellow-100 py-20">
+                <div class="max-w-7xl mx-auto px-6">
 
-            <!-- Tabs -->
-            <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <button class="menu-tab rounded-full bg-brandGold-300 px-5 py-2 text-sm font-semibold text-slate-900"
-                    data-tab="starters">
-                    Starters
-                </button>
-                <button
-                    class="menu-tab rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-700"
-                    data-tab="fusion">
-                    Fusion Recipes
-                </button>
-                <button
-                    class="menu-tab rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-700"
-                    data-tab="punjabi">
-                    Punjabi Main Course
-                </button>
-                <button
-                    class="menu-tab rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-700"
-                    data-tab="dessert">
-                    Dessert
-                </button>
-                <button
-                    class="menu-tab rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-700"
-                    data-tab="recommended">
-                    Recommended
-                </button>
-            </div>
+                    <!-- Heading -->
+                    <div class="text-center mb-14">
+                        <span
+                            class="inline-block rounded-full border border-red-200 bg-white/80 px-4 py-1 text-sm font-semibold tracking-wide text-red-700 shadow-sm">
+                            Our Special Menu
+                        </span>
+                        <h2 class="mt-4 text-4xl md:text-5xl font-extrabold text-red-700">
+                            Explore Our Full Menu
+                        </h2>
+                        <p class="mt-4 max-w-2xl mx-auto text-gray-700 text-base md:text-lg leading-relaxed">
+                            Click any menu card to open it in a larger view and read every item more clearly.
+                        </p>
+                        <div class="w-28 h-1.5 bg-gradient-to-r from-red-500 to-orange-400 mx-auto mt-5 rounded-full">
+                        </div>
+                    </div>
 
-            <!-- Menu grids -->
-            <div class="mt-10">
-                <!-- STARTERS -->
-                <div class="menu-panel grid gap-6 md:grid-cols-4" data-panel="starters">
-                    <!-- item -->
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <span
-                                class="absolute left-4 top-4 z-10 rounded-full bg-brandRed-700 px-3 py-1 text-[10px] font-semibold text-white">
-                                Chef Choice
-                            </span>
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/jalandhari-paneer-tikka.webp.jpg" alt="Jalandhari Paneer Tikka"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Jalandhari Paneer Tikka</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹349</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Fresh cottage cheese marinated in secret Jalandhari spices and grilled.
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    <!-- Menu Grid -->
+                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/tandoori-soya-chap.webp.jpg" alt="Tandoori Soya Chaap"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
+                        <!-- Menu Card 1 -->
+                        <button type="button" onclick="openMenuModal('./newimages/Menu-1.png', 'Makhan Maar Ke Menu 1')"
+                            class="group overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl text-left">
+                            <div class="relative">
+                                <img src="./newimages/Menu-1.png" alt="Makhan Maar Ke Menu 1"
+                                    class="w-full h-auto object-cover transition duration-500 group-hover:scale-105" />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                                </div>
+                                <div
+                                    class="absolute bottom-4 left-4 right-4 flex items-center justify-between opacity-0 transition duration-300 group-hover:opacity-100">
+                                    <span
+                                        class="rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-red-700 shadow">
+                                        Click to zoom
+                                    </span>
+                                    <span
+                                        class="rounded-full bg-red-600 px-3 py-2 text-xs font-bold uppercase tracking-wider text-white shadow">
+                                        Menu 1
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Tandoori Soya Chaap</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹299</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Juicy soya chunks marinated with hung curd and tandoori masala.
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        </button>
 
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <span
-                                class="absolute left-4 top-4 z-10 rounded-full bg-brandRed-700 px-3 py-1 text-[10px] font-semibold text-white">
-                                Trending
-                            </span>
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/veg-kulchizza.webp.png" alt="Veg Kulchizza"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
+                        <!-- Menu Card 2 -->
+                        <button type="button" onclick="openMenuModal('./newimages/Menu-2.png', 'Makhan Maar Ke Menu 2')"
+                            class="group overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl text-left">
+                            <div class="relative">
+                                <img src="./newimages/Menu-2.png" alt="Makhan Maar Ke Menu 2"
+                                    class="w-full h-auto object-cover transition duration-500 group-hover:scale-105" />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                                </div>
+                                <div
+                                    class="absolute bottom-4 left-4 right-4 flex items-center justify-between opacity-0 transition duration-300 group-hover:opacity-100">
+                                    <span
+                                        class="rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-red-700 shadow">
+                                        Click to zoom
+                                    </span>
+                                    <span
+                                        class="rounded-full bg-red-600 px-3 py-2 text-xs font-bold uppercase tracking-wider text-white shadow">
+                                        Menu 2
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Veg Kulchizza</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹279</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Our signature fusion! Authentic Amritsari kulcha base topped with cheese &amp; veggies.
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        </button>
 
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/dal-makhani.webp.jpg" alt="Dal Makhani"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
+                        <!-- Menu Card 3 -->
+                        <button type="button" onclick="openMenuModal('./newimages/Menu-3.png', 'Makhan Maar Ke Menu 3')"
+                            class="group overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-black/5 transition duration-300 hover:-translate-y-2 hover:shadow-2xl text-left">
+                            <div class="relative">
+                                <img src="./newimages/Menu-3.png" alt="Makhan Maar Ke Menu 3"
+                                    class="w-full h-auto object-cover transition duration-500 group-hover:scale-105" />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition duration-300 group-hover:opacity-100">
+                                </div>
+                                <div
+                                    class="absolute bottom-4 left-4 right-4 flex items-center justify-between opacity-0 transition duration-300 group-hover:opacity-100">
+                                    <span
+                                        class="rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-red-700 shadow">
+                                        Click to zoom
+                                    </span>
+                                    <span
+                                        class="rounded-full bg-red-600 px-3 py-2 text-xs font-bold uppercase tracking-wider text-white shadow">
+                                        Menu 3
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Dal Makhani</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹329</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Slow-cooked black lentils overnight with butter and cream — a true classic.
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        </button>
+                    </div>
                 </div>
+            </section>
 
-                <!-- Starter Grid 2 -->
-                <div class="menu-panel grid gap-6 md:grid-cols-4" data-panel="starters">
-                    <!-- item -->
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <span
-                                class="absolute left-4 top-4 z-10 rounded-full bg-brandRed-700 px-3 py-1 text-[10px] font-semibold text-white">
-                                Chef Choice
-                            </span>
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/paneer-tikka-masala.webp.jpg" alt="Paneer Tikka Masala"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Paneer Tikka Masala</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹38 9</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                A savory blend of masala-tossed paneer and zesty mint sauce, rolled into a thin, soft
-                                flatbread with crunchy onion slivers. </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+            <!-- MENU IMAGE MODAL -->
+            <div id="menuModal" class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/85 px-4 py-6"
+                onclick="closeMenuModal()">
+                <div class="relative w-full max-w-6xl" onclick="event.stopPropagation()">
+                    <!-- Close Button -->
+                    <button type="button" onclick="closeMenuModal()"
+                        class="absolute -top-4 right-0 md:-top-5 md:-right-5 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white text-2xl font-bold text-red-700 shadow-lg transition hover:scale-110"
+                        aria-label="Close menu preview">
+                        ×
+                    </button>
 
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/chole-chawal.webp.jpg" alt="Chole Chawal"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
+                    <!-- Modal Content -->
+                    <div class="overflow-hidden rounded-2xl bg-white shadow-2xl">
+                        <div class="flex items-center justify-between border-b border-gray-200 px-5 py-4">
+                            <h3 id="menuModalTitle" class="text-lg md:text-xl font-bold text-red-700">
+                                Menu Preview
+                            </h3>
+                            <span class="text-sm text-gray-500">Tap outside to close</span>
                         </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Chole Chawal</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹299</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                The classic North Indian comfort food - spiced chickpeas served with
-                                steamed basmati rice and a side of tangy pickles. </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
 
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <span
-                                class="absolute left-4 top-4 z-10 rounded-full bg-brandRed-700 px-3 py-1 text-[10px] font-semibold text-white">
-                                Trending
-                            </span>
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/motichoor-parfat.webp.jpg" alt="Motichoor Rabdi Parfait"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
+                        <div class="max-h-[85vh] overflow-auto bg-[#fff8dc] p-3 md:p-5">
+                            <img id="menuModalImage" src="" alt="Menu Preview"
+                                class="mx-auto w-full max-w-5xl rounded-xl shadow-md" />
                         </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Motichoor Rabdi Parfait </h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹199</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                A delightful Indian dessert fusion - layers of motichoor laddu and thick, creamy chilled
-                                rabdi, garnished with chopped nuts.
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/paneer-tikka-roll.webp.jpg" alt="Paneer Tikka Roll"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold"> Paneer Tikka Roll</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹329</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Masala paneer wrapped in a soft rumali roti with house-made mint chutney and crunchy
-                                sliced onions. </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Other panels (hidden by default) -->
-                <div class="menu-panel hidden text-center py-10" data-panel="fusion">
-                    <p class="text-sm text-slate-600">Fusion Recipes coming here… (add your cards like the Starters
-                        panel)</p>
-                </div>
-                <div class="menu-panel hidden text-center py-10" data-panel="punjabi">
-                    <p class="text-sm text-slate-600">Punjabi Main Course coming here…</p>
-                </div>
-                <div class="menu-panel hidden text-center py-10" data-panel="dessert">
-                    <p class="text-sm text-slate-600">Dessert coming here…</p>
-                </div>
-                <div class="menu-panel hidden text-center py-10" data-panel="recommended">
-                    <p class="text-sm text-slate-600">Recommended items coming here…</p>
+                    </div>
                 </div>
             </div>
-
-
-            <!-- Menu grids -->
-            <div class="mt-10">
-                <!-- STARTERS -->
-                <div class="menu-panel grid gap-6 md:grid-cols-4" data-panel="starters">
-                    <!-- item -->
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <span
-                                class="absolute left-4 top-4 z-10 rounded-full bg-brandRed-700 px-3 py-1 text-[10px] font-semibold text-white">
-                                Chef Choice
-                            </span>
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/corn-jalepino-kulchizza.jpeg" alt="Corn Jalapeno Kulchizza"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Corn Jalapeno Kulchizza</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹349</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Soft kulcha base with cheesy & exotic toppings
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/Makhmali-Malai-Chaap.jpg" alt="Makhmali Malai Chaap"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Makhmali Malai Chaap</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹299</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Flavorful soya well marinated with butter, rich cream & yoghurt cooked to perfection in
-                                clay oven.
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <span
-                                class="absolute left-4 top-4 z-10 rounded-full bg-brandRed-700 px-3 py-1 text-[10px] font-semibold text-white">
-                                Trending
-                            </span>
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/Kulcha-Fried-Ice-cream.jpg" alt="Kulcha Fried Ice-cream"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Kulcha Fried Ice-cream</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹279</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                The extreme fusion of hot and cold drizzle of caramel sauce and in soft kulcha for a
-                                crispy & cold taste experience
-                            </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="group rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-slate-100">
-                                <img src="./newimages/Kulcha-Malai-Roll.jpg" alt="Kulcha Malai Roll"
-                                    class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
-                                    loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Kulcha Malai Roll </h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹329</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                Relish soft kulcha with sweet and flavorful malai filling, garnished with pistachio and
-                                saffron for flavorful experience </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Starter Grid 2 -->
-                <div class="menu-panel grid gap-6 md:grid-cols-4" data-panel="starters">
-                    <!-- item -->
-                    <!-- <article class="rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
-                        <div class="relative p-4">
-                            <span
-                                class="absolute left-4 top-4 rounded-full bg-brandRed-700 px-3 py-1 text-[10px] font-semibold text-white">Chef
-                                Choice</span>
-                            <img class="h-32 w-full rounded-xl object-cover" src="./images/paneer-tikka-masala.webp"
-                                alt="" />
-                        </div>
-                        <div class="px-4 pb-4">
-                            <div class="flex items-start justify-between gap-3">
-                                <h3 class="font-display text-base font-bold">Paneer Tikka Masala</h3>
-                                <p class="text-sm font-bold text-brandRed-700">₹38 9</p>
-                            </div>
-                            <p class="mt-2 text-xs leading-5 text-slate-600">
-                                A savory blend of masala-tossed paneer and zesty mint sauce, rolled into a thin, soft
-                                flatbread with crunchy onion slivers. </p>
-                            <div class="mt-4 flex gap-3">
-                                <a class="rounded-md bg-brandGold-300 px-4 py-2 text-xs font-semibold text-slate-900 hover:bg-brandGold-400 transition"
-                                    href="#">
-                                    Order Now
-                                </a>
-                                <a class="rounded-md border border-brandRed-700 px-4 py-2 text-xs font-semibold text-brandRed-700 hover:bg-brandRed-50 transition"
-                                    href="#">
-                                    View Details
-                                </a>
-                            </div>
-                        </div>
-                    </article> -->
-
-
-
-                </div>
-
-                <!-- Other panels (hidden by default) -->
-                <div class="menu-panel hidden text-center py-10" data-panel="fusion">
-                    <p class="text-sm text-slate-600">Fusion Recipes coming here… (add your cards like the Starters
-                        panel)</p>
-                </div>
-                <div class="menu-panel hidden text-center py-10" data-panel="punjabi">
-                    <p class="text-sm text-slate-600">Punjabi Main Course coming here…</p>
-                </div>
-                <div class="menu-panel hidden text-center py-10" data-panel="dessert">
-                    <p class="text-sm text-slate-600">Dessert coming here…</p>
-                </div>
-                <div class="menu-panel hidden text-center py-10" data-panel="recommended">
-                    <p class="text-sm text-slate-600">Recommended items coming here…</p>
-                </div>
-            </div>
-
         </div>
-    
 
-            <div class="mt-12 flex justify-center">
-                <a href="#catering"
-                    class="inline-flex items-center justify-center rounded-full bg-brandRed-700 px-6 py-3 text-sm font-semibold text-white shadow-soft hover:bg-brandRed-800 transition">
-                    Order Now
-                    <span class="ml-2">›</span>
-                </a>
-            </div>
-</section>
+
+        <div class="mt-12 flex justify-center">
+            <a href="#catering"
+                class="inline-flex items-center justify-center rounded-full bg-brandRed-700 px-6 py-3 text-sm font-semibold text-white shadow-soft hover:bg-brandRed-800 transition">
+                Order Now
+                <span class="ml-2">›</span>
+            </a>
+        </div>
+    </section>
 
     <!-- ORDER PLATFORMS + TESTIMONIALS -->
     <section id="reviews" class="bg-cream py-16">
@@ -886,32 +588,45 @@
                 <p class="text-xs font-bold tracking-widest text-slate-500">NOW ONLINE ORDER ON</p>
                 <h2 class="mt-3 font-display text-3xl font-bold text-brandRed-700">Order Your Punjabi Feast</h2>
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm font-bold">
-                    <a href="#" class="rounded-full bg-white px-5 py-3 text-rose-500 shadow-sm ring-1 ring-slate-100">Order on Zomato</a>
-                    <a href="#" class="rounded-full bg-white px-5 py-3 text-orange-500 shadow-sm ring-1 ring-slate-100">Order on Swiggy</a>
-                    <a href="#" class="rounded-full bg-white px-5 py-3 text-pink-500 shadow-sm ring-1 ring-slate-100">Magic pin</a>
+                    <a href="#"
+                        class="rounded-full bg-white px-5 py-3 text-rose-500 shadow-sm ring-1 ring-slate-100">Order on
+                        Zomato</a>
+                    <a href="#"
+                        class="rounded-full bg-white px-5 py-3 text-orange-500 shadow-sm ring-1 ring-slate-100">Order on
+                        Swiggy</a>
+                    <a href="#"
+                        class="rounded-full bg-white px-5 py-3 text-pink-500 shadow-sm ring-1 ring-slate-100">Magic
+                        pin</a>
                 </div>
             </div>
 
             <div class="mt-14 text-center">
                 <h2 class="font-display text-3xl font-bold text-brandRed-700">What Our Customers Say</h2>
-                <p class="mt-2 text-sm text-slate-500">Heartwarming reviews from people who love our buttery Punjabi comfort food.</p>
+                <p class="mt-2 text-sm text-slate-500">Heartwarming reviews from people who love our buttery Punjabi
+                    comfort food.</p>
             </div>
 
             <div class="mt-6 flex flex-wrap items-center justify-center gap-4">
-                <div class="rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-slate-100">Google Rating 4.8 ⭐</div>
-                <div class="rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-slate-100">1500+ Happy Customers</div>
+                <div
+                    class="rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-slate-100">
+                    Google Rating 4.8 ⭐</div>
+                <div
+                    class="rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-slate-100">
+                    1500+ Happy Customers</div>
             </div>
 
             <div class="mt-8 rounded-3xl border border-dashed border-slate-300 bg-white p-6 text-center shadow-sm">
                 <h3 class="font-display text-xl font-bold text-slate-800">Google Review Widget Area</h3>
-                <p class="mt-2 text-sm text-slate-500">Embed your Google review widget or place a live review snippet here when the integration is ready.</p>
+                <p class="mt-2 text-sm text-slate-500">Embed your Google review widget or place a live review snippet
+                    here when the integration is ready.</p>
             </div>
 
             <div class="mt-10 grid gap-6 md:grid-cols-3">
                 <div class="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-100">
                     <div class="flex gap-1 text-brandGold-400">★★★★★</div>
                     <p class="mt-3 text-sm italic text-slate-600">
-                        “The Dal Makhani here is genuinely the best I have had outside of Punjab. The buttery texture is just perfect!”
+                        “The Dal Makhani here is genuinely the best I have had outside of Punjab. The buttery texture is
+                        just perfect!”
                     </p>
                     <div class="mt-6 flex items-center gap-3">
                         <img class="h-10 w-10 rounded-full object-cover" src="https://i.pravatar.cc/80?img=5" alt="" />
@@ -924,7 +639,8 @@
                 <div class="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-100">
                     <div class="flex gap-1 text-brandGold-400">★★★★★</div>
                     <p class="mt-3 text-sm italic text-slate-600">
-                        “The fusion Kulchizza is such a creative dish. It maintains the authenticity of the kulcha while giving a pizza vibe.”
+                        “The fusion Kulchizza is such a creative dish. It maintains the authenticity of the kulcha while
+                        giving a pizza vibe.”
                     </p>
                     <div class="mt-6 flex items-center gap-3">
                         <img class="h-10 w-10 rounded-full object-cover" src="https://i.pravatar.cc/80?img=32" alt="" />
@@ -937,7 +653,8 @@
                 <div class="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-100">
                     <div class="flex gap-1 text-brandGold-400">★★★★★</div>
                     <p class="mt-3 text-sm italic text-slate-600">
-                        “The magical atmosphere and hospitable staff make the dining experience exceptional. Highly recommend the Paneer Tikka!”
+                        “The magical atmosphere and hospitable staff make the dining experience exceptional. Highly
+                        recommend the Paneer Tikka!”
                     </p>
                     <div class="mt-6 flex items-center gap-3">
                         <img class="h-10 w-10 rounded-full object-cover" src="https://i.pravatar.cc/80?img=12" alt="" />
@@ -951,7 +668,7 @@
         </div>
     </section>
 
-<!-- OUR VISUAL TREATS - FOOD GALLERY -->
+    <!-- OUR VISUAL TREATS - FOOD GALLERY -->
     <section id="gallery" class="bg-white py-16">
         <div class="mx-auto max-w-6xl px-4">
             <div class="text-center">
@@ -1032,13 +749,14 @@
                 </a>
             </div>
         </div>
-    
 
-            <div class="mt-12 rounded-3xl border border-dashed border-slate-300 bg-cream p-6 text-center">
-                <h3 class="font-display text-2xl font-bold text-brandRed-700">Instagram Feed Integration</h3>
-                <p class="mt-2 text-sm text-slate-500">Connect your Instagram feed here to showcase fresh dishes, behind-the-scenes kitchen shots and event highlights.</p>
-            </div>
-</section>
+
+        <div class="mt-12 rounded-3xl border border-dashed border-slate-300 bg-cream p-6 text-center">
+            <h3 class="font-display text-2xl font-bold text-brandRed-700">Instagram Feed Integration</h3>
+            <p class="mt-2 text-sm text-slate-500">Connect your Instagram feed here to showcase fresh dishes,
+                behind-the-scenes kitchen shots and event highlights.</p>
+        </div>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="bg-white py-16">
@@ -1119,7 +837,8 @@
                     </div>
 
                     <div class="mt-5 flex flex-wrap items-center gap-4 text-slate-500">
-                        <a class="rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold hover:text-brandRed-700" href="#" aria-label="Directions">Get Directions</a>
+                        <a class="rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold hover:text-brandRed-700"
+                            href="#" aria-label="Directions">Get Directions</a>
                         <a class="hover:text-brandRed-700" href="#" aria-label="Facebook">f</a>
                         <a class="hover:text-brandRed-700" href="#" aria-label="Instagram">◎</a>
                         <a class="hover:text-brandRed-700" href="#" aria-label="Zomato">Z</a>
@@ -1135,10 +854,12 @@
             <div class="grid gap-10 md:grid-cols-4">
                 <div>
                     <div class="flex items-center gap-3">
-                        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandGold-300 text-slate-900 font-bold">M</span>
+                        <span
+                            class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandGold-300 text-slate-900 font-bold">M</span>
                         <span class="font-display text-xl font-bold">Makhan Maar Ke</span>
                     </div>
-                    <p class="mt-4 text-sm leading-6 text-white/70">Authentic Punjabi flavours loaded with butter, warmth and everyday comfort.</p>
+                    <p class="mt-4 text-sm leading-6 text-white/70">Authentic Punjabi flavours loaded with butter,
+                        warmth and everyday comfort.</p>
                 </div>
                 <div>
                     <h3 class="text-sm font-semibold uppercase tracking-wider text-brandGold-200">Quick Links</h3>
@@ -1168,16 +889,75 @@
                 </div>
             </div>
 
-            <div class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/60 md:flex-row md:items-center md:justify-between">
+            <div
+                class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/60 md:flex-row md:items-center md:justify-between">
                 <p>© <span id="year"></span> Makhan Maar Ke. All rights reserved.</p>
                 <p>Designed with ❤️ for Punjabi food lovers.</p>
-                <p><a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a></p>
+                <p><a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms
+                        of Service</a></p>
             </div>
         </div>
     </footer>
 
-<!-- JS: Tabs + Year -->
+    <!-- JS: Tabs + Year -->
     <script>
+        //menu section model
+        function openMenuModal(imageSrc, title) {
+            const modal = document.getElementById("menuModal");
+            const modalImg = document.getElementById("menuModalImage");
+            const modalTitle = document.getElementById("menuModalTitle");
+
+            modalImg.src = imageSrc;
+            modalImg.alt = title;
+            modalTitle.textContent = title;
+
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
+        }
+
+        function closeMenuModal() {
+            const modal = document.getElementById("menuModal");
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                closeMenuModal();
+            }
+        });
+
+
+
+        // hero background carousel
+        const heroSlides = document.querySelectorAll(".hero-slide");
+        const heroDots = document.querySelectorAll("#heroDots button");
+        let currentHeroSlide = 0;
+
+        function showHeroSlide(index) {
+            heroSlides.forEach((slide, i) => {
+                slide.classList.toggle("opacity-100", i === index);
+                slide.classList.toggle("opacity-0", i !== index);
+            });
+
+            heroDots.forEach((dot, i) => {
+                dot.classList.toggle("bg-brandGold-300", i === index);
+                dot.classList.toggle("bg-white/70", i !== index);
+                dot.classList.toggle("opacity-100", i === index);
+                dot.classList.toggle("opacity-60", i !== index);
+                dot.classList.toggle("w-10", i === index);
+                dot.classList.toggle("w-8", i !== index);
+            });
+        }
+
+        setInterval(() => {
+            currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+            showHeroSlide(currentHeroSlide);
+        }, 4500);
+
+
         // year
         document.getElementById("year").textContent = new Date().getFullYear();
 
